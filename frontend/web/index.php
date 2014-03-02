@@ -9,7 +9,8 @@
 //    var_dump($_SERVER['REQUEST_URI']);
 //    echo '</pre>';
 //}
-$logs = file_get_contents(__DIR__ . '/../../vendor/nginx/logs/error.log');
+//$logs = file_get_contents(__DIR__ . '/../../vendor/nginx/logs/error.log');
+$logs = file_get_contents(__DIR__ . '/../../vendor/php/var/log/php-errors.log');
 echo '<pre>';
 var_dump($logs);
 echo '</pre>';
