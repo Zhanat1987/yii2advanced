@@ -55,8 +55,8 @@ http {
     location /backend {
         root /app/backend/web;
         index index.php index.html index.htm;
-        # rewrite ^/backend/(.*)$ /$1 break;
-        # try_files $uri $uri/ /index.php?r=$request_uri;
+        try_files $uri $uri/ /index.php?r=$request_uri;
+        rewrite ^/backend/(.*)$ /$1 break;
     }
 
     # Deny hidden files (.htaccess, .htpasswd, .DS_Store).
