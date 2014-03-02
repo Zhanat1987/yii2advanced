@@ -9,6 +9,10 @@
 //    var_dump($_SERVER['REQUEST_URI']);
 //    echo '</pre>';
 //}
+$logs = file_get_contents(__DIR__ . '/../../vendor/nginx/logs/error.log');
+echo '<pre>';
+var_dump($logs);
+echo '</pre>';
 
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
