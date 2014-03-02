@@ -56,10 +56,10 @@ http {
     # location /backend/ {
         # root /app/backend/web;
         # root /app/backend/web/;
-        # alias /app/backend/web/;
-        alias /app/backend/web;
+        alias /app/backend/web/;
+        # alias /app/backend/web;
         index index.php;
-        try_files $uri $uri/ /index.php?r=$request_uri;
+        # try_files $uri $uri/ /index.php?r=$request_uri;
         # rewrite ^/backend/(.*)$ /$1 break;
     }
 
