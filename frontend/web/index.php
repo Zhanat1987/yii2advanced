@@ -1,14 +1,14 @@
 <?php
 
-if (strpos($_SERVER['REQUEST_URI'], 'admin') !== FALSE) {
-    echo 1;
-    exit;
-    header("Location: http://calm-bayou-1695.herokuapp.com//backend/web/index.php");
-} else {
-    echo '<pre>';
-    var_dump($_SERVER['REQUEST_URI']);
-    echo '</pre>';
-}
+//if (strpos($_SERVER['REQUEST_URI'], 'admin') !== FALSE) {
+//    echo 1;
+//    exit;
+//    header("Location: http://calm-bayou-1695.herokuapp.com/backend/web/index.php");
+//} else {
+//    echo '<pre>';
+//    var_dump($_SERVER['REQUEST_URI']);
+//    echo '</pre>';
+//}
 
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
