@@ -38,6 +38,9 @@ http {
     listen <%= ENV['PORT'] %>;
     server_name _;
 
+    access_log /app/vendor/nginx/logs/error.log;
+    access_log /app/vendor/php/var/log/php-errors.log;
+
     # Some basic cache-control for static files to be sent to the browser
     location ~* \.(?:ico|css|js|gif|jpeg|jpg|png)$ {
       expires max;
