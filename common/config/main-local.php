@@ -20,7 +20,7 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'suffix' => '.html',
+//            'suffix' => '.html',
             'rules' => [
 //                '<action:(login|logout|about)>' => 'site/<action>',
 //                // ...
