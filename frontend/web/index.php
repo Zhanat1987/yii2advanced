@@ -14,6 +14,10 @@ $logs = file_get_contents(__DIR__ . '/../../vendor/php/var/log/php-errors.log');
 echo '<pre>';
 var_dump($logs);
 echo '</pre>';
+$logs = file(__DIR__ . '/../../vendor/php/var/log/php-errors.log');
+echo '<pre>';
+var_dump($logs);
+echo '</pre>';
 
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
