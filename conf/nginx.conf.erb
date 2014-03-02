@@ -52,11 +52,11 @@ http {
         # try_files $uri $uri/ /index.php/$request_uri;
     }
 
-    # location /backend {
-    location /backend/ {
+    location /backend {
+    # location /backend/ {
         root /app/backend/web;
         index index.php index.html index.htm;
-        try_files $uri $uri/ /index.php?r=$request_uri;
+        # try_files $uri $uri/ /index.php?r=$request_uri;
         # rewrite ^/backend/(.*)$ /$1 break;
     }
 
@@ -116,9 +116,12 @@ http {
     include /app/conf/nginx.d/*.conf;
 
     location ~ .*\.php$ {
-      set $php_root /app/frontend/web;
+      # set $php_root /app/frontend/web;
+      # if ($request_uri ~* /backend) {
+          # set $php_root /app/backend/web;
+      # }
       if ($request_uri ~* /backend) {
-          set $php_root /app/backend/web;
+          set root /app/backend/web;
       }
       try_files $uri =404;
       limit_conn phplimit 5; # limit to 5 concurrent users to PHP per IP.
