@@ -82,10 +82,10 @@ echo '</pre>';
  */
 echo "__DIR__ . '/../../app/logs/error.log'<br />";
 echo '<pre>';
-var_dump(file_exists(__DIR__ . '/../../app/logs/error.log'));
+var_dump(file_exists(__DIR__ . '/../../logs/error.log'));
 echo '</pre>';
 
-$logs = file_get_contents(__DIR__ . '/../../app/logs/error.log');
+$logs = file_get_contents(__DIR__ . '/../../logs/error.log');
 echo '<pre>';
 var_dump($logs);
 echo '</pre>';
