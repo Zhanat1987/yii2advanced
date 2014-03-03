@@ -80,7 +80,7 @@ echo '</pre>';
 /*
  *
  */
-echo "__DIR__ . '/../../app/logs/error.log'<br />";
+echo "__DIR__ . '/../../logs/error.log'<br />";
 echo '<pre>';
 var_dump(file_exists(__DIR__ . '/../../logs/error.log'));
 echo '</pre>';
@@ -90,7 +90,7 @@ echo '<pre>';
 var_dump($logs);
 echo '</pre>';
 
-$logs = file(__DIR__ . '/../../app/logs/error.log');
+$logs = file(__DIR__ . '/../../logs/error.log');
 echo '<pre>';
 var_dump($logs);
 echo '</pre>';
