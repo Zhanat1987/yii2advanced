@@ -9,33 +9,35 @@
 //    var_dump($_SERVER['REQUEST_URI']);
 //    echo '</pre>';
 //}
+
 //$logs = file_get_contents(__DIR__ . '/../../vendor/nginx/logs/error.log');
-echo 'Current directory - ' . __DIR__ . '<hr />';
-echo 'debug<hr />';
-echo "__DIR__ . '/../../vendor/nginx/logs/error.log'<br />";
-$logs = file(__DIR__ . '/../../vendor/nginx/logs/error.log');
-$html = '<ul>';
-foreach ($logs as $log) {
-    $html .= '<li>' . $log . '</li>';
-}
-$html .= '</ul><hr />';
-echo $html;
-echo "__DIR__ . '/../../vendor/php/var/log/php-errors.log'<br />";
-$logs = file(__DIR__ . '/../../vendor/php/var/log/php-errors.log');
-$html = '<ul>';
-foreach ($logs as $log) {
-    $html .= '<li>' . $log . '</li>';
-}
-$html .= '</ul><hr />';
-echo $html;
-echo "__DIR__ . '/../../logs/error.log'<br />";
-$logs = file(__DIR__ . '/../../logs/error.log');
-$html = '<ul>';
-foreach ($logs as $log) {
-    $html .= '<li>' . $log . '</li>';
-}
-$html .= '</ul><hr />';
-echo $html;
+//echo 'Current directory - ' . __DIR__ . '<hr />';
+//echo 'debug<hr />';
+//echo "__DIR__ . '/../../vendor/nginx/logs/error.log'<br />";
+//$logs = file(__DIR__ . '/../../vendor/nginx/logs/error.log');
+//$html = '<ul>';
+//foreach ($logs as $log) {
+//    $html .= '<li>' . $log . '</li>';
+//}
+//$html .= '</ul><hr />';
+//echo $html;
+//echo "__DIR__ . '/../../vendor/php/var/log/php-errors.log'<br />";
+//$logs = file(__DIR__ . '/../../vendor/php/var/log/php-errors.log');
+//$html = '<ul>';
+//foreach ($logs as $log) {
+//    $html .= '<li>' . $log . '</li>';
+//}
+//$html .= '</ul><hr />';
+//echo $html;
+//echo "__DIR__ . '/../../logs/error.log'<br />";
+//$logs = file(__DIR__ . '/../../logs/error.log');
+//$html = '<ul>';
+//foreach ($logs as $log) {
+//    $html .= '<li>' . $log . '</li>';
+//}
+//$html .= '</ul><hr />';
+//echo $html;
+
 //echo '<pre>';
 //var_dump(file_exists(__DIR__ . '/../../vendor/nginx/logs/error.log'));
 //echo '</pre>';
@@ -137,7 +139,7 @@ echo $html;
 //var_dump($logs);
 //echo '</pre>';
 
-exit;
+//exit;
 
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
