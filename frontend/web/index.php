@@ -77,14 +77,41 @@ echo '<pre>';
 var_dump($logs);
 echo '</pre>';
 
-//echo "__DIR__ . '/../../vendor/nginx/logs/error.log'<br />";
-//echo '<pre>';
-//var_dump(file_exists(__DIR__ . '/../../vendor/nginx/logs/error.log'));
-//echo '</pre>';
-//echo "__DIR__ . '/../../vendor/nginx/logs/error.log'<br />";
-//echo '<pre>';
-//var_dump(file_exists(__DIR__ . '/../../vendor/nginx/logs/error.log'));
-//echo '</pre>';
+/*
+ *
+ */
+echo "__DIR__ . '/../../app/logs/error.log'<br />";
+echo '<pre>';
+var_dump(file_exists(__DIR__ . '/../../app/logs/error.log'));
+echo '</pre>';
+
+$logs = file_get_contents(__DIR__ . '/../../app/logs/error.log');
+echo '<pre>';
+var_dump($logs);
+echo '</pre>';
+
+$logs = file(__DIR__ . '/../../app/logs/error.log');
+echo '<pre>';
+var_dump($logs);
+echo '</pre>';
+
+/*
+ *
+ */
+echo "'/app/logs/error.log'<br />";
+echo '<pre>';
+var_dump(file_exists('/app/logs/error.log'));
+echo '</pre>';
+
+$logs = file_get_contents('/app/logs/error.log');
+echo '<pre>';
+var_dump($logs);
+echo '</pre>';
+
+$logs = file('/app/logs/error.log');
+echo '<pre>';
+var_dump($logs);
+echo '</pre>';
 
 exit;
 

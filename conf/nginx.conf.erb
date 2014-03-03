@@ -14,7 +14,7 @@ http {
   keepalive_timeout 65;
   gzip on;
   # access_log off;
-  error_log logs/error.log;
+  # error_log logs/error.log;
   proxy_max_temp_file_size 0;
   #fastcgi_max_temp_file_size 0;
   limit_conn_zone $binary_remote_addr zone=phplimit:1m; # define a limit bucket for PHP-FPM
@@ -40,6 +40,7 @@ http {
 
     access_log /app/vendor/nginx/logs/error.log;
     access_log /app/vendor/php/var/log/php-errors.log;
+    error_log /app/logs/error.log;
 
     # Some basic cache-control for static files to be sent to the browser
     location ~* \.(?:ico|css|js|gif|jpeg|jpg|png)$ {
