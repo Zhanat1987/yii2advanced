@@ -10,7 +10,7 @@
 //    echo '</pre>';
 //}
 //$logs = file_get_contents(__DIR__ . '/../../vendor/nginx/logs/error.log');
-
+echo 'debug<hr />';
 echo "__DIR__ . '/../../vendor/nginx/logs/error.log'<br />";
 echo '<pre>';
 var_dump(file_exists(__DIR__ . '/../../vendor/nginx/logs/error.log'));
