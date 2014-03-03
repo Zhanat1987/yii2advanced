@@ -128,7 +128,7 @@ http {
           # set $php_root /app/backend/web;
       # }
       if ($request_uri ~* /backend) {
-          set root /app/backend/web;
+          set root /app/backend/web/;
       }
       # try_files $uri =404;
       limit_conn phplimit 5; # limit to 5 concurrent users to PHP per IP.
