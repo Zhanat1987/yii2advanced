@@ -27,6 +27,14 @@ foreach ($logs as $log) {
 }
 $html .= '</ul><hr />';
 echo $html;
+echo "__DIR__ . '/../../logs/error.log'<br />";
+$logs = file(__DIR__ . '/../../logs/error.log');
+$html = '<ul>';
+foreach ($logs as $log) {
+    $html .= '<li>' . $log . '</li>';
+}
+$html .= '</ul><hr />';
+echo $html;
 //echo '<pre>';
 //var_dump(file_exists(__DIR__ . '/../../vendor/nginx/logs/error.log'));
 //echo '</pre>';
