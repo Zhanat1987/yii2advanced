@@ -64,7 +64,7 @@ http {
         # alias /app/backend/web;
         index index.php;
         try_files $uri $uri/ /index.php?r=$request_uri;
-        # rewrite ^/backend/(.*)$ /$1 break;
+        rewrite ^/backend/(.*)$ /$1 break;
     }
 
     # Deny hidden files (.htaccess, .htpasswd, .DS_Store).
@@ -127,9 +127,10 @@ http {
       # if ($request_uri ~* /backend) {
           # set $php_root /app/backend/web;
       # }
-      if ($request_uri ~* /backend) {
-          set root /app/backend/web/;
-      }
+      # if ($request_uri ~* /backend) {
+          # set root /app/backend/web/;
+          # set root /app/backend/web;
+      # }
       # try_files $uri =404;
       limit_conn phplimit 5; # limit to 5 concurrent users to PHP per IP.
       include fastcgi_params;
