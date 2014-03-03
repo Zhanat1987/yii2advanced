@@ -130,7 +130,7 @@ http {
       # if ($request_uri ~* /backend) {
           # set root /app/backend/web;
       # }
-      try_files $uri =404;
+      # try_files $uri =404;
       limit_conn phplimit 5; # limit to 5 concurrent users to PHP per IP.
       include fastcgi_params;
       fastcgi_param HTTPS $my_https if_not_empty;
