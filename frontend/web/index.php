@@ -10,6 +10,7 @@
 //    echo '</pre>';
 //}
 //$logs = file_get_contents(__DIR__ . '/../../vendor/nginx/logs/error.log');
+echo 'Current directory - ' . __DIR__ . '<hr />';
 echo 'debug<hr />';
 echo "__DIR__ . '/../../vendor/nginx/logs/error.log'<br />";
 $logs = file(__DIR__ . '/../../vendor/nginx/logs/error.log');
