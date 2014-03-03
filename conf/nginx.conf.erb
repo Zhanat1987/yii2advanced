@@ -31,12 +31,15 @@ http {
     server unix:/tmp/php-fpm.socket;
   }
 
-  root /app/frontend/web;
-  index index.php index.html index.htm;
+  # root /app/frontend/web;
+  # index index.php index.html index.htm;
 
   server {
     listen <%= ENV['PORT'] %>;
     server_name _;
+
+    root /app/frontend/web;
+    index index.php;
 
     access_log /app/vendor/nginx/logs/error.log;
     access_log /app/vendor/php/var/log/php-errors.log;
