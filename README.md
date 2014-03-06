@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 hello world
 hello form test_branch
+hello world from new branch
 Yii 2 Advanced Application Template
 ===================================
 
