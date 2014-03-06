@@ -95,4 +95,9 @@ class GuideController extends Controller
         return $this->render('logging');
     }
 
+    public function actionAuthentication()
+    {
+        return $this->render('authentication');
+    }
+
 }

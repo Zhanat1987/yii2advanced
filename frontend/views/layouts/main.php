@@ -85,6 +85,10 @@ AppAsset::register($this);
                     ['label' => \Yii::t('guide', 'Logging'), 'url' => ['/guide/logging']],
                 ]
                 ],
+                ['label' => \Yii::t('guide', 'Security and access control'), 'items' => [
+                    ['label' => \Yii::t('guide', 'Authentication'), 'url' => ['/guide/authentication']],
+                ]
+                ],
                 ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/site/contact']],
                 ['label' => 'Php Info', 'url' => ['/site/php-info']],
 			];
