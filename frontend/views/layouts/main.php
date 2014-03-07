@@ -58,8 +58,6 @@ AppAsset::register($this);
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
-//                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
-//                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 /*
                     '<li class="dropdown-header"><?php echo \Yii::t("guide", "Base concepts"); ?></li>',
                     '<li class="dropdown-header">\Yii::t("guide", "Base concepts")</li>',
@@ -87,6 +85,8 @@ AppAsset::register($this);
                 ],
                 ['label' => \Yii::t('guide', 'Security and access control'), 'items' => [
                     ['label' => \Yii::t('guide', 'Authentication'), 'url' => ['/guide/authentication']],
+                    ['label' => \Yii::t('guide', 'Security'), 'url' => ['/guide/security']],
+                    ['label' => \Yii::t('guide', 'Authorization'), 'url' => ['/guide/authorization']],
                 ]
                 ],
                 ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/site/contact']],

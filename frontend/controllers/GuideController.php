@@ -100,4 +100,14 @@ class GuideController extends Controller
         return $this->render('authentication');
     }
 
+    public function actionSecurity()
+    {
+        return $this->render('security');
+    }
+
+    public function actionAuthorization()
+    {
+        return $this->render('authorization');
+    }
+
 }
