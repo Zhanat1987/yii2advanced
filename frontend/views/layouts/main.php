@@ -50,7 +50,7 @@ AppAsset::register($this);
                     ['label' => \Yii::t('guide', 'Theming'), 'url' => ['/guide/theming']],
                     ['label' => \Yii::t('guide', 'Bootstrap widgets'), 'url' => ['/guide/bootstrap-widgets']],
                     ['label' => \Yii::t('guide', 'Console applications'), 'url' => ['/guide/console']],
-//                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
+                    ['label' => \Yii::t('guide', 'Working with forms'), 'url' => ['/guide/working-with-forms']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],

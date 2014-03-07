@@ -30,7 +30,7 @@ return [
     'Composer' => 'Composer (композитор)',
     'Extensions and 3rd party libraries' => 'Расширения и сторонние библиотеки',
     'Console applications' => 'Консольные приложения',
-    '' => '',
+    'Working with forms' => 'Работа с формами',
     '' => '',
     '' => '',
     '' => '',

@@ -120,4 +120,9 @@ class GuideController extends Controller
         return $this->render('console');
     }
 
+    public function actionWorkingWithForms()
+    {
+        return $this->render('working-with-forms');
+    }
+
 }
