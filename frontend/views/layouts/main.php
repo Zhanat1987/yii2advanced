@@ -56,7 +56,6 @@ AppAsset::register($this);
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
-//                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
                 ]
                 ],
                 ['label' => \Yii::t('guide', 'Additional topics'), 'items' => [
@@ -75,6 +74,10 @@ AppAsset::register($this);
                     '<li class="divider"></li>',
                     '<li class="dropdown-header">' . \Yii::t('guide', 'Extensions and 3rd party libraries') . '</li>',
                     ['label' => \Yii::t('guide', 'Composer'), 'url' => ['/guide/composer']],
+                    [
+                        'label' => \Yii::t('guide', 'Using 3rd-Party Libraries'),
+                        'url' => ['/guide/using-3rd-party-libraries']
+                    ],
                 ]
                 ],
                 ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/site/contact']],

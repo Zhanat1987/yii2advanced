@@ -125,4 +125,9 @@ class GuideController extends Controller
         return $this->render('working-with-forms');
     }
 
+    public function actionUsing3rdPartyLibraries()
+    {
+        return $this->render('using-3rd-party-libraries');
+    }
+
 }

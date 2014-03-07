@@ -31,7 +31,7 @@ return [
     'Extensions and 3rd party libraries' => 'Расширения и сторонние библиотеки',
     'Console applications' => 'Консольные приложения',
     'Working with forms' => 'Работа с формами',
-    '' => '',
+    'Using 3rd-Party Libraries' => 'Использование сторонних библиотек',
     '' => '',
     '' => '',
     '' => '',
