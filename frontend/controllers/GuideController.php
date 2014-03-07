@@ -115,4 +115,9 @@ class GuideController extends Controller
         return $this->render('composer');
     }
 
+    public function actionConsole()
+    {
+        return $this->render('console');
+    }
+
 }
