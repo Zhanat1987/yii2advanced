@@ -110,4 +110,9 @@ class GuideController extends Controller
         return $this->render('authorization');
     }
 
+    public function actionComposer()
+    {
+        return $this->render('composer');
+    }
+
 }

@@ -57,36 +57,24 @@ AppAsset::register($this);
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
-//                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
-/*
-                    '<li class="dropdown-header"><?php echo \Yii::t("guide", "Base concepts"); ?></li>',
-                    '<li class="dropdown-header">\Yii::t("guide", "Base concepts")</li>',
-*/
-//                    ['label' => 'Теория', 'url' => ['/xml/sax']],
-//                    ['label' => 'Пример', 'url' => ['/xml/sax-example']],
-//                    '<li class="dropdown-header">DOM</li>',
-//                    ['label' => 'Теория', 'url' => ['/xml/dom']],
-//                    ['label' => 'Пример', 'url' => ['/xml/dom-example']],
-//                    ['label' => 'Пример 2', 'url' => ['/xml/dom-example2']],
-//                    '<li class="dropdown-header">SimpleXML</li>',
-//                    ['label' => 'Теория', 'url' => ['/xml/simple-xml']],
-//                    ['label' => 'Пример', 'url' => ['/xml/simple-xml-example']],
-//                    '<li class="dropdown-header">XML и CSS</li>',
-//                    ['label' => 'Пример', 'url' => ['/xml/css']],
                 ]
                 ],
-                ['label' => \Yii::t('guide', 'Developers Toolbox'), 'items' => [
+                ['label' => \Yii::t('guide', 'Additional topics'), 'items' => [
+                    '<li class="divider"></li>',
+                    '<li class="dropdown-header">' . \Yii::t('guide', 'Developers Toolbox') . '</li>',
                     ['label' => \Yii::t('guide', 'Helper Classes'), 'url' => ['/guide/helper-classes']],
                     ['label' => \Yii::t('guide', 'Debug toolbar and debugger'), 'url' => ['/guide/module-debug']],
                     ['label' => \Yii::t('guide', 'The Gii code generation tool'), 'url' => ['/guide/gii']],
                     ['label' => \Yii::t('guide', 'Error Handling'), 'url' => ['/guide/error-handling']],
                     ['label' => \Yii::t('guide', 'Logging'), 'url' => ['/guide/logging']],
-                ]
-                ],
-                ['label' => \Yii::t('guide', 'Security and access control'), 'items' => [
+                    '<li class="divider"></li>',
+                    '<li class="dropdown-header">' . \Yii::t('guide', 'Security and access control') . '</li>',
                     ['label' => \Yii::t('guide', 'Authentication'), 'url' => ['/guide/authentication']],
                     ['label' => \Yii::t('guide', 'Security'), 'url' => ['/guide/security']],
                     ['label' => \Yii::t('guide', 'Authorization'), 'url' => ['/guide/authorization']],
+                    '<li class="divider"></li>',
+                    '<li class="dropdown-header">' . \Yii::t('guide', 'Extensions and 3rd party libraries') . '</li>',
+                    ['label' => \Yii::t('guide', 'Composer'), 'url' => ['/guide/composer']],
                 ]
                 ],
                 ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/site/contact']],
@@ -96,7 +84,8 @@ AppAsset::register($this);
 				$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
 				$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
 			} else {
-				$menuItems[] = ['label' => 'Logout (' . Yii::$app->user->identity->username .')' , 'url' => ['/site/logout']];
+				$menuItems[] = ['label' => 'Logout (' . Yii::$app->user->identity->username .
+                    ')' , 'url' => ['/site/logout']];
 			}
 			echo Nav::widget([
 				'options' => ['class' => 'navbar-nav navbar-right'],
