@@ -32,7 +32,7 @@ return [
     'Console applications' => 'Консольные приложения',
     'Working with forms' => 'Работа с формами',
     'Using 3rd-Party Libraries' => 'Использование сторонних библиотек',
-    '' => '',
+    'Extending Yii' => 'Расширения Yii',
     '' => '',
     '' => '',
     '' => '',

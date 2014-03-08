@@ -55,7 +55,6 @@ AppAsset::register($this);
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
 //                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
-//                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
                 ]
                 ],
                 ['label' => \Yii::t('guide', 'Additional topics'), 'items' => [
@@ -78,6 +77,7 @@ AppAsset::register($this);
                         'label' => \Yii::t('guide', 'Using 3rd-Party Libraries'),
                         'url' => ['/guide/using-3rd-party-libraries']
                     ],
+                    ['label' => \Yii::t('guide', 'Extending Yii'), 'url' => ['/guide/extending-yii']],
                 ]
                 ],
                 ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/site/contact']],

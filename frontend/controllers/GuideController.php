@@ -130,4 +130,9 @@ class GuideController extends Controller
         return $this->render('using-3rd-party-libraries');
     }
 
+    public function actionExtendingYii()
+    {
+        return $this->render('extending-yii');
+    }
+
 }
