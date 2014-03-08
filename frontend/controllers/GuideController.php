@@ -135,4 +135,9 @@ class GuideController extends Controller
         return $this->render('extending-yii');
     }
 
+    public function actionUsingTemplateEngines()
+    {
+        return $this->render('using-template-engines');
+    }
+
 }
