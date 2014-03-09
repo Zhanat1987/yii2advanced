@@ -140,4 +140,24 @@ class GuideController extends Controller
         return $this->render('using-template-engines');
     }
 
+    public function actionDataOverview()
+    {
+        return $this->render('data-overview');
+    }
+
+    public function actionDataProviders()
+    {
+        return $this->render('data-providers');
+    }
+
+    public function actionDataWidgets()
+    {
+        return $this->render('data-widgets');
+    }
+
+    public function actionGrid()
+    {
+        return $this->render('grid');
+    }
+
 }
