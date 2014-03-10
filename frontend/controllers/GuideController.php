@@ -160,4 +160,24 @@ class GuideController extends Controller
         return $this->render('grid');
     }
 
+    public function actionDatabaseBasics()
+    {
+        return $this->render('database-basics');
+    }
+
+    public function actionQueryBuilder()
+    {
+        return $this->render('query-builder');
+    }
+
+    public function actionActiveRecord()
+    {
+        return $this->render('active-record');
+    }
+
+    public function actionDatabaseMigration()
+    {
+        return $this->render('database-migration');
+    }
+
 }

@@ -92,11 +92,17 @@ AppAsset::register($this);
                     ['label' => \Yii::t('guide', 'Data widgets'), 'url' => ['/guide/data-widgets']],
                     ['label' => \Yii::t('guide', 'Grid'), 'url' => ['/guide/grid']],
                     '<li class="divider"></li>',
-                    '<li class="dropdown-header">' . \Yii::t('guide', 'Developers Toolbox') . '</li>',
-                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
-                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
-                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
-                    ['label' => \Yii::t('guide', ''), 'url' => ['/guide/']],
+                    '<li class="dropdown-header">' . \Yii::t('guide', 'Database') . '</li>',
+                    ['label' => \Yii::t('guide', 'Database basics'), 'url' => ['/guide/database-basics']],
+                    [
+                        'label' => \Yii::t('guide', 'Query Builder and Query'),
+                        'url' => ['/guide/query-builder']
+                    ],
+                    ['label' => \Yii::t('guide', 'Active Record'), 'url' => ['/guide/active-record']],
+                    [
+                        'label' => \Yii::t('guide', 'Database Migration'),
+                        'url' => ['/guide/database-migration']
+                    ],
                 ]
                 ],
                 ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/site/contact']],
