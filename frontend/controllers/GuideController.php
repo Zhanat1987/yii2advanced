@@ -180,4 +180,59 @@ class GuideController extends Controller
         return $this->render('database-migration');
     }
 
+    public function actionWhatIsYii()
+    {
+        return $this->render('what-is-yii');
+    }
+
+    public function actionAppsOwn()
+    {
+        return $this->render('apps-own');
+    }
+
+    public function actionAppsBasic()
+    {
+        return $this->render('apps-basic');
+    }
+
+    public function actionInstallation()
+    {
+        return $this->render('installation');
+    }
+
+    public function actionCaching()
+    {
+        return $this->render('caching');
+    }
+
+    public function actionInternationalization()
+    {
+        return $this->render('internationalization');
+    }
+
+    public function actionUrl()
+    {
+        return $this->render('url');
+    }
+
+    public function actionPerformance()
+    {
+        return $this->render('performance');
+    }
+
+    public function actionValidation()
+    {
+        return $this->render('validation');
+    }
+
+    public function actionUpgradeFromV1()
+    {
+        return $this->render('upgrade-from-v1');
+    }
+
+    public function actionAssets()
+    {
+        return $this->render('assets');
+    }
+
 }

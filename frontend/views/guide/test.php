@@ -23,6 +23,12 @@
 ?>");
     ?>
 </p>
+ul>li*
+ol>li*
+ul>li*>code*1
+<h3>
+    <code></code>
+</h3>
 <h3>
     <code>
 
