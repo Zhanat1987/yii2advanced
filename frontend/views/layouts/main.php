@@ -26,7 +26,7 @@ AppAsset::register($this);
 	<div class="wrap">
 		<?php
 			NavBar::begin([
-				'brandLabel' => 'My Company',
+				'brandLabel' => 'Yii 2',
 				'brandUrl' => Yii::$app->homeUrl,
 				'options' => [
 					'class' => 'navbar-inverse navbar-fixed-top',
@@ -165,6 +165,8 @@ AppAsset::register($this);
                     ],
                 ]
                 ],
+                ['label' => \Yii::t('guide', 'Gii'), 'url' => ['/gii/default/index']],
+                ['label' => 'Backend', 'url' => 'http://yii2translate.backend/'],
 //                ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/site/contact']],
 //                ['label' => 'Php Info', 'url' => ['/site/php-info']],
 			];

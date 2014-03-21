@@ -31,7 +31,9 @@ class Category extends \yii\db\ActiveRecord
 	{
 		return [
 			[['parent_id'], 'integer'],
-			[['materialized_path', 'title'], 'required'],
+//            [['parent_id'], 'default'],
+//			[['materialized_path', 'title'], 'required'],
+            [['title'], 'required'],
 			[['materialized_path', 'description'], 'string', 'max' => 255],
 			[['title'], 'string', 'max' => 100],
 			[['title'], 'unique']

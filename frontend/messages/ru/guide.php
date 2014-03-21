@@ -60,6 +60,7 @@ return [
     'References' => 'Ссылки',
     'Upgrading from Yii 1.1' => 'Обновление с Yii 1.1',
     'Managing assets' => "Управление assets'ами",
+    'Gii' => 'Генератор кода',
     '' => '',
     '' => '',
     '' => '',

@@ -8,22 +8,27 @@ use yii\widgets\ActiveForm;
  * @var common\models\Category $model
  * @var yii\widgets\ActiveForm $form
  */
+\common\myhelpers\Debugger::debug($model->getErrors());
 ?>
 
 <div class="category-form">
 
 	<?php $form = ActiveForm::begin(); ?>
 
-		<?= $form->field($model, 'parent_id')->textInput() ?>
+        <?php //echo $form->field($model, 'parent_id')->textInput() ?>
+        <?php echo $form->field($model, 'parent_id')->dropDownList($model->getAllForDropdownList($model->id)) ?>
 
-		<?= $form->field($model, 'materialized_path')->textInput(['maxlength' => 255]) ?>
+		<?php echo $form->field($model, 'materialized_path')->textInput(['maxlength' => 255,
+            'disabled' => 'disabled']) ?>
 
-		<?= $form->field($model, 'title')->textInput(['maxlength' => 100]) ?>
+		<?php echo $form->field($model, 'title')->textInput(['maxlength' => 100]) ?>
 
-		<?= $form->field($model, 'description')->textInput(['maxlength' => 255]) ?>
+        <?php //echo $form->field($model, 'description')->textInput(['maxlength' => 255]) ?>
+        <?php echo $form->field($model, 'description')->textarea(['maxlength' => 255]) ?>
 
 		<div class="form-group">
-			<?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+			<?php echo Html::submitButton($model->isNewRecord ? 'Create' : 'Update',
+                ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
 		</div>
 
 	<?php ActiveForm::end(); ?>
