@@ -31,8 +31,6 @@ class Category extends \yii\db\ActiveRecord
 	{
 		return [
 			[['parent_id'], 'integer'],
-//            [['parent_id'], 'default'],
-//			[['materialized_path', 'title'], 'required'],
             [['title'], 'required'],
 			[['materialized_path', 'description'], 'string', 'max' => 255],
 			[['title'], 'string', 'max' => 100],
@@ -69,4 +67,22 @@ class Category extends \yii\db\ActiveRecord
 	{
 		return $this->hasMany(Category::className(), ['parent_id' => 'id']);
 	}
+
+    public function beforeValidate()
+    {
+        if (parent::beforeValidate()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function beforeSave($insert)
+    {
+        if (parent::beforeSave($insert)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

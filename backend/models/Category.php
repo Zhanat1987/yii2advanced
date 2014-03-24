@@ -8,21 +8,23 @@
 
 namespace backend\models;
 
-
 class Category extends \common\models\Category
 {
 
     public function beforeValidate()
     {
-        parent::beforeValidate();
-        // FIXME: TODO: WIP, TBD
-//        if ($this->isNewRecord && empty($this->parent_id)) {
-//            $this->materialized_path = '';
-//            $this->parent_id = 0;
-//        }
+        if (parent::beforeValidate()) {
+            // FIXME: TODO: WIP, TBD
+            if (!empty($this->parent_id)) {
+                $this->parent_id = (int) $this->parent_id;
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public function getAllForDropdownList($id)
+    public function getAllForDropdownList($id = null)
     {
         if ($id) {
             $models = $this->find()->asArray()->select(['id', 'title'])->where('id != ' . $id)->all();
@@ -38,6 +40,23 @@ class Category extends \common\models\Category
             }
         }
         return $data;
+    }
+
+    public function beforeSave($insert)
+    {
+        if (parent::beforeSave($insert)) {
+            // ...custom code here...
+            if (!empty($this->parent_id)) {
+                $model = $this->find()->asArray()->select(['materialized_path'])->where(
+                    'id = ' . $this->parent_id)->one();
+                $parentMP = !empty($model['materialized_path']) ?
+                    $model['materialized_path'] . '.' : '';
+                $this->materialized_path = $parentMP . $this->parent_id;
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 
 } 

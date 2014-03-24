@@ -69,7 +69,7 @@ class MyClass extends \\yii\\base\\Object
 </p>
 <p>
     Подробнее о конфигурации можно найти в разделе базовые концепции.
-</p
+</p>
 <h2>
     События
 </h2>
@@ -166,8 +166,6 @@ Event::on(ActiveRecord::className(), ActiveRecord::EVENT_AFTER_INSERT, function 
 <p>
     Модель теперь связана с именем формы, возвращаемым от метода [[yii\base\Model::formName()|formName()]]. Это в основном используется при использовании HTML формы для сбора данных, вводимых пользователем для модели. Ранее в 1.1, это, как правило, жестко кодировалось как имя класса модели.
 </p>
-
-New methods called [[yii\base\Model::load()|load()] and [[yii\base\Model::loadMultiple()|Model::loadMultiple()]] are introduced to simplify the data population from user inputs to a model. For example,
 <p>
     Новые методы, вызываемые как [[yii\base\Model::load()|load()] и [[yii\base\Model::loadMultiple()|Model::loadMultiple()]] вводятся для упрощения передачи данных из формы в модель. Например,<br />
     <?php
@@ -191,7 +189,7 @@ Model::loadMultiple(\$postTags, \$_POST);
     ?>
 </p>
 <p>
-    Yii 2.0 добавляет новый метод [[yii\base\Model::scenarios()|scenarios()]] для объявления атрибутов, которые требуют проверки ы конкретном сценарии. Классы-потомки должны переписать [[yii\base\Model::scenarios()|scenarios()]], чтобы вернуть список сценариев и соответствующих атрибутов, которые должны быть проверены, когда вызывается [[yii\base\Model::validate()|validate()]]. Например,<br />
+    Yii 2.0 добавляет новый метод [[yii\base\Model::scenarios()|scenarios()]] для объявления атрибутов, которые требуют проверки в конкретном сценарии. Классы-потомки должны переписать [[yii\base\Model::scenarios()|scenarios()]], чтобы вернуть список сценариев и соответствующих атрибутов, которые должны быть проверены, когда вызывается [[yii\base\Model::validate()|validate()]]. Например,<br />
     <?php
     highlight_string("<?php
 public function scenarios()
@@ -258,7 +256,7 @@ echo \\yii\\widgets\\Menu::widget(['items' => \$items]);
 </h2>
 <hr />
 <p>
-    Темы работают совершенно по другому в Yii 2.0. В настоящее время они основаны на пути карты "перевести" представление источника в тематическое представление. Например, если путь карты для темы равен ['/web/views' => '/web/themes/basic'], то тематический версия для представления /web/views/site/index.php будет /web/themes/basic/site/index.php.
+    Темы работают совершенно по другому в Yii 2.0. В настоящее время они основаны на пути карты "перевести" представление источника в тематическое представление. Например, если путь карты для темы равен ['/web/views' => '/web/themes/basic'], то тематическая версия для представления /web/views/site/index.php будет /web/themes/basic/site/index.php.
 </p>
 <p>
     По этой причине тема теперь может быть применена к любому представлению, даже если представление оказывается вне контекста контроллера или виджета.

@@ -20,6 +20,15 @@ namespace common\models;
  */
 class Article extends \yii\db\ActiveRecord
 {
+
+    public static $status = [
+        0 => 'not published',
+        1 => 'published',
+        2 => 'deleted'
+    ];
+
+    public $birthDate;
+
 	/**
 	 * @inheritdoc
 	 */
@@ -34,17 +43,39 @@ class Article extends \yii\db\ActiveRecord
 	public function rules()
 	{
 		return [
-			[['cat_id', 'title', 'text', 'author', 'created_at'], 'required'],
+			[['cat_id', 'title', 'text', 'author', 'status'], 'required'],
 			[['cat_id', 'status', 'views', 'author'], 'integer'],
 			[['text'], 'string'],
 			[['created_at', 'updated_at'], 'safe'],
 			[['title'], 'string', 'max' => 255],
-			[['img'], 'string', 'max' => 4],
-			[['title'], 'unique']
+//			[['img'], 'file', 'on' => ['create'],
+//                'types' => 'jpg, jpeg, png, gif',
+//                'minSize' => 1048576,
+//                'maxSize' => 10485760,
+//                'maxFiles' => 1,
+//                'message' => 'ошибка при загрузке файла',
+//                'uploadRequired' => 'файл необходимо загрузить',
+//                'tooBig' => 'файл не может превышать {limit}',
+//                'tooSmall' => 'атрибут - {attribute}, имя файла - {file}, меньше чем - {limit}',
+//                'wrongType' => 'не верный формат файла, необходимо загрузить - {extensions}',
+//                'tooMany' => 'количество загружаемых файлов не должно превышать - {limit}',
+//                'skipOnEmpty' => true // не валидировать при пустом значении
+//            ],
+            [['img'], 'image', 'mimeTypes' => 'image/jpeg, image/png'],
+            [['birthDate'], 'validateAge', 'params' => ['min' => 10, 'max' => 1000]],
+            [['title'], 'unique']
 		];
 	}
 
-	/**
+    public function validateAge($attribute, $params)
+    {
+        $value = $this->$attribute;
+        if ($value < $params['min'] || $value > $params['max']) {
+            $this->addError($attribute, 'Не правильно указан возраст!!!');
+        }
+    }
+
+    /**
 	 * @inheritdoc
 	 */
 	public function attributeLabels()
@@ -70,4 +101,28 @@ class Article extends \yii\db\ActiveRecord
 	{
 		return $this->hasMany(ArticleTag::className(), ['article_id' => 'id']);
 	}
+
+    public function beforeValidate()
+    {
+        if (parent::beforeValidate()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function beforeSave($insert)
+    {
+        if (parent::beforeSave($insert)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function scenarios()
+    {
+        return parent::scenarios();
+    }
+
 }

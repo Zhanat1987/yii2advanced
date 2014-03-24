@@ -189,6 +189,23 @@ AppAsset::register($this);
 			'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 		]) ?>
 		<?= Alert::widget() ?>
+        <div class="row">
+            <?php
+//            \common\myhelpers\Debugger::debug(\Yii::$app->components);
+//            $article = \common\models\Article::find(1);
+//            if ($article) {
+//                $attributes = $article->attributes;
+//                \common\myhelpers\Debugger::debug($attributes);
+//            }
+//            $article = new \common\models\Article();
+//            $attributes = [
+//                'title' => 'Massive assignment example',
+//                'text' => 'Never allow assigning attributes that are not meant to be assigned.',
+//            ];
+//            $article->attributes = $attributes;
+//            \common\myhelpers\Debugger::debug($attributes);
+            ?>
+        </div>
 		<?= $content ?>
 		</div>
 	</div>
