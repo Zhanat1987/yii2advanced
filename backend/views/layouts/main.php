@@ -70,10 +70,10 @@ AppAsset::register($this);
                 'url' => ['/console']
             ],
             '<li class="divider"></li>',
-            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
+            '<li class="dropdown-header">' . \Yii::t('guide', 'Working with forms') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Working with forms'),
-                'url' => ['/guide/working-with-forms']
+                'url' => ['/working-with-forms']
             ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',

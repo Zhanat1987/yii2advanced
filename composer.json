@@ -19,7 +19,8 @@
 		"yiisoft/yii2-bootstrap": "*",
 		"yiisoft/yii2-swiftmailer": "*",
         "2amigos/yii2-ckeditor-widget" : "*",
-		"zhuravljov/yii2-datetime-widgets" : "*"
+		"zhuravljov/yii2-datetime-widgets" : "*",
+        "kartik-v/yii2-widgets": "dev-master"
 	},
 	"require-dev": {
 		"yiisoft/yii2-codeception": "*",
