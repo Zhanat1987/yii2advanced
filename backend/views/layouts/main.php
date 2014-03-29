@@ -76,8 +76,8 @@ AppAsset::register($this);
                 'url' => ['/working-with-forms']
             ],
             '<li class="divider"></li>',
-            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
-            ['label' => \Yii::t('guide', 'Caching'), 'url' => ['/guide/caching']],
+            '<li class="dropdown-header">' . \Yii::t('guide', 'Caching') . '</li>',
+            ['label' => \Yii::t('guide', 'Caching'), 'url' => ['/caching']],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
             [

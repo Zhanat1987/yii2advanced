@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "72a9bd767194986578bfe97bb3e4ea32",
+    "hash": "c811a357e55928e1960609f9432ca500",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
