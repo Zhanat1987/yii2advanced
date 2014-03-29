@@ -41,7 +41,10 @@ AppAsset::register($this);
                     [
                         'label' => \Yii::t('guide', 'Bootstrap widgets'),
                         'url' => ['/guide/bootstrap-widgets']],
-                    ['label' => \Yii::t('guide', 'Console applications'), 'url' => ['/guide/console']],
+                    [
+                        'label' => \Yii::t('guide', 'Console applications'),
+                        'url' => ['/guide/console']
+                    ],
                     [
                         'label' => \Yii::t('guide', 'Working with forms'),
                         'url' => ['/guide/working-with-forms']
@@ -78,7 +81,10 @@ AppAsset::register($this);
                         'label' => \Yii::t('guide', 'Advanced application template'),
                         'url' => ['/guide/advanced-template']
                     ],
-                    ['label' => \Yii::t('guide', 'Configuration'), 'url' => ['/guide/configuration']],
+                    [
+                        'label' => \Yii::t('guide', 'Configuration'),
+                        'url' => ['/guide/configuration']
+                    ],
                     [
                         'label' => \Yii::t('guide', 'Creating your own Application structure'),
                         'url' => ['/guide/apps-own']
@@ -112,19 +118,31 @@ AppAsset::register($this);
                 ['label' => \Yii::t('guide', 'Additional topics'), 'items' => [
                     '<li class="divider"></li>',
                     '<li class="dropdown-header">' . \Yii::t('guide', 'Developers Toolbox') . '</li>',
-                    ['label' => \Yii::t('guide', 'Helper Classes'), 'url' => ['/guide/helper-classes']],
+                    [
+                        'label' => \Yii::t('guide', 'Helper Classes'),
+                        'url' => ['/guide/helper-classes']
+                    ],
                     [
                         'label' => \Yii::t('guide', 'Debug toolbar and debugger'),
                         'url' => ['/guide/module-debug']
                     ],
-                    ['label' => \Yii::t('guide', 'The Gii code generation tool'), 'url' => ['/guide/gii']],
-                    ['label' => \Yii::t('guide', 'Error Handling'), 'url' => ['/guide/error-handling']],
+                    [
+                        'label' => \Yii::t('guide', 'The Gii code generation tool'),
+                        'url' => ['/guide/gii']
+                    ],
+                    [
+                        'label' => \Yii::t('guide', 'Error Handling'),
+                        'url' => ['/guide/error-handling']
+                    ],
                     ['label' => \Yii::t('guide', 'Logging'), 'url' => ['/guide/logging']],
                     '<li class="divider"></li>',
                     '<li class="dropdown-header">'
                         . \Yii::t('guide', 'Security and access control') .
                     '</li>',
-                    ['label' => \Yii::t('guide', 'Authentication'), 'url' => ['/guide/authentication']],
+                    [
+                        'label' => \Yii::t('guide', 'Authentication'),
+                        'url' => ['/guide/authentication']
+                    ],
                     ['label' => \Yii::t('guide', 'Security'), 'url' => ['/guide/security']],
                     ['label' => \Yii::t('guide', 'Authorization'), 'url' => ['/guide/authorization']],
                     '<li class="divider"></li>',
@@ -148,12 +166,18 @@ AppAsset::register($this);
                         . \Yii::t('guide', 'Data providers, lists and grids') .
                     '</li>',
                     ['label' => \Yii::t('guide', 'Overview'), 'url' => ['/guide/data-overview']],
-                    ['label' => \Yii::t('guide', 'Data providers'), 'url' => ['/guide/data-providers']],
+                    [
+                        'label' => \Yii::t('guide', 'Data providers'),
+                        'url' => ['/guide/data-providers']
+                    ],
                     ['label' => \Yii::t('guide', 'Data widgets'), 'url' => ['/guide/data-widgets']],
                     ['label' => \Yii::t('guide', 'Grid'), 'url' => ['/guide/grid']],
                     '<li class="divider"></li>',
                     '<li class="dropdown-header">' . \Yii::t('guide', 'Database') . '</li>',
-                    ['label' => \Yii::t('guide', 'Database basics'), 'url' => ['/guide/database-basics']],
+                    [
+                        'label' => \Yii::t('guide', 'Database basics'),
+                        'url' => ['/guide/database-basics']
+                    ],
                     [
                         'label' => \Yii::t('guide', 'Query Builder and Query'),
                         'url' => ['/guide/query-builder']
@@ -166,7 +190,7 @@ AppAsset::register($this);
                 ]
                 ],
                 ['label' => \Yii::t('guide', 'Gii'), 'url' => ['/gii/default/index']],
-                ['label' => 'Backend', 'url' => 'http://yii2translate.backend/'],
+//                ['label' => 'Backend', 'url' => 'http://yii2translate.backend/'],
 //                ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/site/contact']],
 //                ['label' => 'Php Info', 'url' => ['/site/php-info']],
 			];

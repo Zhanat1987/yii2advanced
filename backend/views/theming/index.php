@@ -1,0 +1,1 @@
+<?php \common\myhelpers\Debugger::debug(__DIR__); ?>

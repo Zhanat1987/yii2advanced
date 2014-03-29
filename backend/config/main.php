@@ -29,6 +29,19 @@ return [
 		'errorHandler' => [
 			'errorAction' => 'site/error',
 		],
+        'view' => [
+            // темизация
+            'theme' => [
+                // определяет, где искать файлы представлений
+//                'pathMap' => ['@app/views' => '@app/themes/basic'],
+                // использование нескольких путей
+                'pathMap' => [
+                    '@app/views' => ['@app/themes/christmas', '@app/themes/basic']
+                ],
+                // определяет базовый URL для ресурсов, на которые ссылаются из этих файлов
+                'baseUrl' => '@app/themes/basic',
+            ],
+        ],
 	],
 	'params' => $params,
 ];
