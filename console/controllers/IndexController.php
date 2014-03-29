@@ -10,7 +10,7 @@ use yii\console\Controller;
 class IndexController extends Controller
 {
 
-    public $option1, $option2;
+    public $option1, $option2, $test;
 
     /**
      * php yii index
@@ -18,7 +18,7 @@ class IndexController extends Controller
      */
     public function actionIndex()
 	{
-		echo 1;
+		echo 1 . "\n\r";
 	}
 
     /**
@@ -27,7 +27,23 @@ class IndexController extends Controller
      */
     public function actionParams($param1, $param2 = 'test')
     {
-        echo "param1 - $param1\n\rparam2 - $param2";
+        echo "param1 - $param1\n\rparam2 - $param2\n\r";
+    }
+
+    /**
+     * php yii index/params-with-array param1Value
+     * php yii index/params-with-array param1Value param2Value
+     * php yii index/params-with-array param1Value param2Value v1,v2,k3=v3
+     */
+    public function actionParamsWithArray($param1, $param2 = 'test', array $data = [])
+    {
+        echo "param1 - $param1\n\rparam2 - $param2\n\r";
+        if ($data) {
+            echo "data:\n\r";
+            foreach ($data as $k => $v) {
+                echo "key - $k, value - $v\n\r";
+            }
+        }
     }
 
     /**
@@ -37,7 +53,7 @@ class IndexController extends Controller
      */
     public function actionYiiOptions()
     {
-        echo "color - $this->color";
+        echo "color - $this->color\n\r";
     }
 
     /**
@@ -49,7 +65,8 @@ class IndexController extends Controller
     public function options($id)
     {
         // $id might be used in subclass to provide options specific to action id
-        return array_merge(['option1', 'option2'], parent::options($id));
+        return array_merge(['option1', 'option2', 'test'],
+            parent::options($id));
     }
 
     /**
@@ -57,7 +74,15 @@ class IndexController extends Controller
      */
     public function actionMyOptions()
     {
-        echo "option1 - $this->option1\n\roption2 - $this->option2\n\rcolor - $this->color";
+        echo "option1 - $this->option1\n\roption2 - $this->option2\n\rcolor - $this->color\n\r";
+    }
+
+    /**
+     * php yii index/all-options
+     */
+    public function actionAllOptions()
+    {
+        var_dump($this->options('index'));
     }
 
 }
