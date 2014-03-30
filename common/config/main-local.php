@@ -1,6 +1,7 @@
 <?php
 return [
-    'language' => 'ru-RU',
+//    'language' => 'ru-RU',
+    'language' => 'ru',
 	'components' => [
 		'db' => [
 			'class' => 'yii\db\Connection',
@@ -18,6 +19,7 @@ return [
          * https://github.com/yiisoft/yii2/blob/master/docs/guide/url.md
          */
         'urlManager' => [
+            'class' => 'common\components\MyUrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
 //            'suffix' => '.html',
@@ -26,9 +28,20 @@ return [
 //                // ...
 //                ['class' => 'app\components\CarUrlRule', 'connectionID' => 'db', ...],
 
-//                '<controller:(post|comment)>/<id:\d+>/<action:(create|update|delete)>' => '<controller>/<action>',
+//                '<controller:(post|comment)>/<id:\d+>/<action:(create|updatelete)>' => '<controller>/<action>',
 //                '<controller:(post|comment)>/<id:\d+>' => '<controller>/read',
 //                '<controller:(post|comment)>s' => '<controller>/list',
+                '<language:(ru|en)>/' => 'site/index',
+                '<language:(ru|en)>/<action:(contact|login|logout)>' =>
+                    'site/<action>',
+                '<language:(ru|en)>/<controller>'=>
+                    '<controller>/index',
+                '<language:(ru|en)>/<controller:>/<id:\d+>'=>
+                    '<controller>/view',
+                '<language:(ru|en)>/<controller>/<action>/<id:\d+>'=>
+                    '<controller>/<action>',
+                '<language:(ru|en)>/<controller>/<action>'=>
+                    '<controller>/<action>',
             ],
         ],
         'i18n' => [

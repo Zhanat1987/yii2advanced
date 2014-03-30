@@ -2,12 +2,12 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
+use common\components\MyController;
 
 /**
  * Theming controller
  */
-class ThemingController extends Controller
+class ThemingController extends MyController
 {
 
 	public function actionIndex()

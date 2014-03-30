@@ -8,13 +8,13 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
-use yii\web\Controller;
+use common\components\MyController;
 use Yii;
 
 /**
  * Site controller
  */
-class SiteController extends Controller
+class SiteController extends MyController
 {
     /**
      * @inheritdoc

@@ -2,12 +2,12 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
+use common\components\MyController;
 
 /**
  * Console controller
  */
-class ConsoleController extends Controller
+class ConsoleController extends MyController
 {
 
 	public function actionIndex()

@@ -2,13 +2,13 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
+use common\components\MyController;
 use backend\models\FM;
 
 /**
  * WorkingWithForms controller
  */
-class WorkingWithFormsController extends Controller
+class WorkingWithFormsController extends MyController
 {
 
 	public function actionIndex()

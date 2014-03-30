@@ -5,14 +5,14 @@ namespace backend\controllers;
 use Yii;
 use backend\models\Category;
 use backend\models\search\CategorySearch;
-use yii\web\Controller;
+use common\components\MyController;
 use yii\web\NotFoundHttpException;
 use yii\web\VerbFilter;
 
 /**
  * CategoryController implements the CRUD actions for Category model.
  */
-class CategoryController extends Controller
+class CategoryController extends MyController
 {
 	public function behaviors()
 	{

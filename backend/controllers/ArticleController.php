@@ -6,7 +6,7 @@ use common\myhelpers\Debugger;
 use Yii;
 use backend\models\Article;
 use backend\models\search\ArticleSearch;
-use yii\web\Controller;
+use common\components\MyController;
 use yii\web\NotFoundHttpException;
 use yii\web\VerbFilter;
 use yii\web\UploadedFile;
@@ -14,7 +14,7 @@ use yii\web\UploadedFile;
 /**
  * ArticleController implements the CRUD actions for Article model.
  */
-class ArticleController extends Controller
+class ArticleController extends MyController
 {
     public function behaviors()
     {

@@ -2,20 +2,22 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
+use common\components\MyController;
 use backend\models\Caching;
 
 /**
  * WorkingWithForms controller
  */
-class CachingController extends Controller
+class CachingController extends MyController
 {
 
 	public function actionIndex()
 	{
+//        Yii::$app->cache->delete('allCaching');
         $model = new Caching;
+        $models = $model->getAll();
 		return $this->render('index', [
-            'model' => $model,
+            'models' => $models,
         ]);
 	}
 

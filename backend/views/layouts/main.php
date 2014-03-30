@@ -35,69 +35,69 @@ AppAsset::register($this);
         ['label' => \Yii::t('guide', 'Others'), 'items' => [
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Advanced Topics') . '</li>',
-            ['label' => \Yii::t('guide', 'Testing'), 'url' => ['/guide/testing']],
+            ['label' => \Yii::t('guide', 'Testing'), 'url' => ['/' . \Yii::$app->language . '/guide/testing']],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Theming') . '</li>',
-            ['label' => \Yii::t('guide', 'Theming'), 'url' => ['/theming']],
-            ['label' => 'есть в "themes/views", но нет в "views"', 'url' => ['/theming/index2']],
+            ['label' => \Yii::t('guide', 'Theming'), 'url' => ['/' . \Yii::$app->language . '/theming']],
+            ['label' => 'есть в "themes/views", но нет в "views"', 'url' => ['/' . \Yii::$app->language . '/theming/index2']],
             [
                 'label' => 'нет в первой указанной теме, но есть во второй теме',
-                'url' => ['/theming/index3']
+                'url' => ['/' . \Yii::$app->language . '/theming/index3']
             ],
             [
                 'label' => 'нет ни в одной из указанных тем,
                 но есть в представлениях',
-                'url' => ['/theming/index4']
+                'url' => ['/' . \Yii::$app->language . '/theming/index4']
             ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
             [
                 'label' => 'Основы',
-                'url' => ['/bootstrap-widgets']
+                'url' => ['/' . \Yii::$app->language . '/bootstrap-widgets']
             ],
             [
                 'label' => 'Виджеты',
-                'url' => ['/bootstrap-widgets/widgets']
+                'url' => ['/' . \Yii::$app->language . '/bootstrap-widgets/widgets']
             ],
             [
                 'label' => 'Использование .less файлов напрямую в Bootstrap',
-                'url' => ['/bootstrap-widgets/less']
+                'url' => ['/' . \Yii::$app->language . '/bootstrap-widgets/less']
             ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Console applications') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Console applications'),
-                'url' => ['/console']
+                'url' => ['/' . \Yii::$app->language . '/console']
             ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Working with forms') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Working with forms'),
-                'url' => ['/working-with-forms']
+                'url' => ['/' . \Yii::$app->language . '/working-with-forms']
             ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Caching') . '</li>',
-            ['label' => \Yii::t('guide', 'Caching'), 'url' => ['/caching']],
+            ['label' => \Yii::t('guide', 'Caching'), 'url' => ['/' . \Yii::$app->language . '/caching']],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Internationalization'),
-                'url' => ['/guide/internationalization']
+                'url' => ['/' . \Yii::$app->language . '/guide/internationalization']
             ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
-            ['label' => \Yii::t('guide', 'URL Management'), 'url' => ['/guide/url']],
+            ['label' => \Yii::t('guide', 'URL Management'), 'url' => ['/' . \Yii::$app->language . '/guide/url']],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Performance Tuning'),
-                'url' => ['/guide/performance']
+                'url' => ['/' . \Yii::$app->language . '/guide/performance']
             ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Managing assets'),
-                'url' => ['/guide/assets']
+                'url' => ['/' . \Yii::$app->language . '/guide/assets']
             ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
@@ -105,52 +105,52 @@ AppAsset::register($this);
             '<li class="dropdown-header">' . \Yii::t('guide', 'References') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Model validation reference'),
-                'url' => ['/guide/validation']
+                'url' => ['/' . \Yii::$app->language . '/guide/validation']
             ],
         ]
         ],
         ['label' => \Yii::t('guide', 'Guide'), 'items' => [
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Introduction') . '</li>',
-            ['label' => \Yii::t('guide', 'What is Yii'), 'url' => ['/guide/what-is-yii']],
+            ['label' => \Yii::t('guide', 'What is Yii'), 'url' => ['/' . \Yii::$app->language . '/guide/what-is-yii']],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Getting started') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Advanced application template'),
-                'url' => ['/guide/advanced-template']
+                'url' => ['/' . \Yii::$app->language . '/guide/advanced-template']
             ],
             [
                 'label' => \Yii::t('guide', 'Configuration'),
-                'url' => ['/guide/configuration']
+                'url' => ['/' . \Yii::$app->language . '/guide/configuration']
             ],
             [
                 'label' => \Yii::t('guide', 'Creating your own Application structure'),
-                'url' => ['/guide/apps-own']
+                'url' => ['/' . \Yii::$app->language . '/guide/apps-own']
             ],
             [
                 'label' => \Yii::t('guide', 'Basic application template'),
-                'url' => ['/guide/apps-basic']
+                'url' => ['/' . \Yii::$app->language . '/guide/apps-basic']
             ],
             [
                 'label' => \Yii::t('guide', 'Installation'),
-                'url' => ['/guide/installation']
+                'url' => ['/' . \Yii::$app->language . '/guide/installation']
             ],
             [
                 'label' => \Yii::t('guide', 'Upgrading from Yii 1.1'),
-                'url' => ['/guide/upgrade-from-v1']
+                'url' => ['/' . \Yii::$app->language . '/guide/upgrade-from-v1']
             ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Base concepts') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Basic concepts of Yii'),
-                'url' => ['/guide/basic-concepts']
+                'url' => ['/' . \Yii::$app->language . '/guide/basic-concepts']
             ],
-            ['label' => \Yii::t('guide', 'MVC Overview'), 'url' => ['/guide/m-v-c']],
-            ['label' => \Yii::t('guide', 'Model'), 'url' => ['/guide/model']],
-            ['label' => \Yii::t('guide', 'View'), 'url' => ['/guide/view']],
-            ['label' => \Yii::t('guide', 'Controller'), 'url' => ['/guide/controller']],
-            ['label' => \Yii::t('guide', 'Events'), 'url' => ['/guide/events']],
-            ['label' => \Yii::t('guide', 'Behaviors'), 'url' => ['/guide/behaviors']],
+            ['label' => \Yii::t('guide', 'MVC Overview'), 'url' => ['/' . \Yii::$app->language . '/guide/m-v-c']],
+            ['label' => \Yii::t('guide', 'Model'), 'url' => ['/' . \Yii::$app->language . '/guide/model']],
+            ['label' => \Yii::t('guide', 'View'), 'url' => ['/' . \Yii::$app->language . '/guide/view']],
+            ['label' => \Yii::t('guide', 'Controller'), 'url' => ['/' . \Yii::$app->language . '/guide/controller']],
+            ['label' => \Yii::t('guide', 'Events'), 'url' => ['/' . \Yii::$app->language . '/guide/events']],
+            ['label' => \Yii::t('guide', 'Behaviors'), 'url' => ['/' . \Yii::$app->language . '/guide/behaviors']],
         ]
         ],
         ['label' => \Yii::t('guide', 'Additional topics'), 'items' => [
@@ -158,43 +158,43 @@ AppAsset::register($this);
             '<li class="dropdown-header">' . \Yii::t('guide', 'Developers Toolbox') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Helper Classes'),
-                'url' => ['/guide/helper-classes']
+                'url' => ['/' . \Yii::$app->language . '/guide/helper-classes']
             ],
             [
                 'label' => \Yii::t('guide', 'Debug toolbar and debugger'),
-                'url' => ['/guide/module-debug']
+                'url' => ['/' . \Yii::$app->language . '/guide/module-debug']
             ],
             [
                 'label' => \Yii::t('guide', 'The Gii code generation tool'),
-                'url' => ['/guide/gii']
+                'url' => ['/' . \Yii::$app->language . '/guide/gii']
             ],
             [
                 'label' => \Yii::t('guide', 'Error Handling'),
-                'url' => ['/guide/error-handling']
+                'url' => ['/' . \Yii::$app->language . '/guide/error-handling']
             ],
-            ['label' => \Yii::t('guide', 'Logging'), 'url' => ['/guide/logging']],
+            ['label' => \Yii::t('guide', 'Logging'), 'url' => ['/' . \Yii::$app->language . '/guide/logging']],
             '<li class="divider"></li>',
             '<li class="dropdown-header">'
             . \Yii::t('guide', 'Security and access control') .
             '</li>',
             [
                 'label' => \Yii::t('guide', 'Authentication'),
-                'url' => ['/guide/authentication']
+                'url' => ['/' . \Yii::$app->language . '/guide/authentication']
             ],
-            ['label' => \Yii::t('guide', 'Security'), 'url' => ['/guide/security']],
-            ['label' => \Yii::t('guide', 'Authorization'), 'url' => ['/guide/authorization']],
+            ['label' => \Yii::t('guide', 'Security'), 'url' => ['/' . \Yii::$app->language . '/guide/security']],
+            ['label' => \Yii::t('guide', 'Authorization'), 'url' => ['/' . \Yii::$app->language . '/guide/authorization']],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' .
             \Yii::t('guide', 'Extensions and 3rd party libraries') . '</li>',
-            ['label' => \Yii::t('guide', 'Composer'), 'url' => ['/guide/composer']],
+            ['label' => \Yii::t('guide', 'Composer'), 'url' => ['/' . \Yii::$app->language . '/guide/composer']],
             [
                 'label' => \Yii::t('guide', 'Using 3rd-Party Libraries'),
-                'url' => ['/guide/using-3rd-party-libraries']
+                'url' => ['/' . \Yii::$app->language . '/guide/using-3rd-party-libraries']
             ],
-            ['label' => \Yii::t('guide', 'Extending Yii'), 'url' => ['/guide/extending-yii']],
+            ['label' => \Yii::t('guide', 'Extending Yii'), 'url' => ['/' . \Yii::$app->language . '/guide/extending-yii']],
             [
                 'label' => \Yii::t('guide', 'Using template engines'),
-                'url' => ['/guide/using-template-engines']
+                'url' => ['/' . \Yii::$app->language . '/guide/using-template-engines']
             ],
         ]
         ],
@@ -203,49 +203,54 @@ AppAsset::register($this);
             '<li class="dropdown-header">'
             . \Yii::t('guide', 'Data providers, lists and grids') .
             '</li>',
-            ['label' => \Yii::t('guide', 'Overview'), 'url' => ['/guide/data-overview']],
+            ['label' => \Yii::t('guide', 'Overview'), 'url' => ['/' . \Yii::$app->language . '/guide/data-overview']],
             [
                 'label' => \Yii::t('guide', 'Data providers'),
-                'url' => ['/guide/data-providers']
+                'url' => ['/' . \Yii::$app->language . '/guide/data-providers']
             ],
-            ['label' => \Yii::t('guide', 'Data widgets'), 'url' => ['/guide/data-widgets']],
-            ['label' => \Yii::t('guide', 'Grid'), 'url' => ['/guide/grid']],
+            ['label' => \Yii::t('guide', 'Data widgets'), 'url' => ['/' . \Yii::$app->language . '/guide/data-widgets']],
+            ['label' => \Yii::t('guide', 'Grid'), 'url' => ['/' . \Yii::$app->language . '/guide/grid']],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Database') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Database basics'),
-                'url' => ['/guide/database-basics']
+                'url' => ['/' . \Yii::$app->language . '/guide/database-basics']
             ],
             [
                 'label' => \Yii::t('guide', 'Query Builder and Query'),
-                'url' => ['/guide/query-builder']
+                'url' => ['/' . \Yii::$app->language . '/guide/query-builder']
             ],
-            ['label' => \Yii::t('guide', 'Active Record'), 'url' => ['/guide/active-record']],
+            ['label' => \Yii::t('guide', 'Active Record'), 'url' => ['/' . \Yii::$app->language . '/guide/active-record']],
             [
                 'label' => \Yii::t('guide', 'Database Migration'),
-                'url' => ['/guide/database-migration']
+                'url' => ['/' . \Yii::$app->language . '/guide/database-migration']
             ],
         ]
         ],
-//        ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/site/contact']],
-//        ['label' => \Yii::t('guide', 'Articles'), 'url' => ['/article/index']],
-//        ['label' => \Yii::t('guide', 'Articles and tags'), 'url' => ['/article-tag/index']],
-//        ['label' => \Yii::t('guide', 'Tags'), 'url' => ['/tag/index']],
-//        ['label' => \Yii::t('guide', 'Categories'), 'url' => ['/category/index']],
-        ['label' => \Yii::t('guide', 'Gii'), 'url' => ['/gii/default/index']],
+//        ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/' . \Yii::$app->language . '/site/contact']],
+//        ['label' => \Yii::t('guide', 'Articles'), 'url' => ['/' . \Yii::$app->language . '/article/index']],
+//        ['label' => \Yii::t('guide', 'Articles and tags'), 'url' => ['/' . \Yii::$app->language . '/article-tag/index']],
+//        ['label' => \Yii::t('guide', 'Tags'), 'url' => ['/' . \Yii::$app->language . '/tag/index']],
+//        ['label' => \Yii::t('guide', 'Categories'), 'url' => ['/' . \Yii::$app->language . '/category/index']],
+        ['label' => \Yii::t('guide', 'Gii'), 'url' => ['/' . \Yii::$app->language . '/gii/default/index']],
 //        ['label' => 'Frontend', 'url' => 'http://yii2translate.frontend/'],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        $menuItems[] = ['label' => 'Login', 'url' => ['/' . \Yii::$app->language . '/site/login']];
     } else {
         $menuItems[] = [
             'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-            'url' => ['/site/logout']
+            'url' => ['/' . \Yii::$app->language . '/site/logout']
         ];
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => $menuItems,
+    ]);
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-left'],
+        'items' => \common\components\MyUrlManager::languages(
+                \Yii::$app->getRequest()->getUrl()),
     ]);
     NavBar::end();
     ?>
@@ -255,6 +260,9 @@ AppAsset::register($this);
         Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
+        <?php
+        //\common\myhelpers\Debugger::debug('');
+        ?>
         <?= $content ?>
     </div>
 </div>

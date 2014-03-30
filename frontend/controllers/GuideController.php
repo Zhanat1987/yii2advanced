@@ -1,13 +1,13 @@
 <?php
 namespace frontend\controllers;
 
-use yii\web\Controller;
+use common\components\MyController;
 use Yii;
 
 /**
  * Guide controller
  */
-class GuideController extends Controller
+class GuideController extends MyController
 {
 
     public function actionAdvancedTemplate()

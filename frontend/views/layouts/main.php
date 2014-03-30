@@ -205,6 +205,10 @@ AppAsset::register($this);
 				'options' => ['class' => 'navbar-nav navbar-right'],
 				'items' => $menuItems,
 			]);
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav navbar-left'],
+                'items' => \common\components\MyUrlManager::languages2(),
+            ]);
 			NavBar::end();
 		?>
 

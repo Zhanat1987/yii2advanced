@@ -2,12 +2,12 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
+use common\components\MyController;
 
 /**
  * BootstrapWidgets controller
  */
-class BootstrapWidgetsController extends Controller
+class BootstrapWidgetsController extends MyController
 {
 
 	public function actionIndex()

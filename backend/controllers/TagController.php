@@ -5,14 +5,14 @@ namespace backend\controllers;
 use Yii;
 use common\models\Tag;
 use backend\models\search\TagSearch;
-use yii\web\Controller;
+use common\components\MyController;
 use yii\web\NotFoundHttpException;
 use yii\web\VerbFilter;
 
 /**
  * TagController implements the CRUD actions for Tag model.
  */
-class TagController extends Controller
+class TagController extends MyController
 {
 	public function behaviors()
 	{

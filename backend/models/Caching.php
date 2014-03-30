@@ -44,4 +44,14 @@ class Caching extends \yii\db\ActiveRecord
             'content' => 'Content',
         ];
     }
+
+    public function getAll()
+    {
+        if (($models = unserialize(Yii::$app->cache->get('allCaching'))) === false) {
+            $models = self::find()->asArray()->select('id, title')->all();
+            Yii::$app->cache->set('allCaching', serialize($models), 3600);
+        }
+        return $models;
+    }
+
 }

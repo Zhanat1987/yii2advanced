@@ -5,14 +5,14 @@ namespace backend\controllers;
 use Yii;
 use common\models\ArticleTag;
 use backend\models\search\ArticleTagSearch;
-use yii\web\Controller;
+use common\components\MyController;
 use yii\web\NotFoundHttpException;
 use yii\web\VerbFilter;
 
 /**
  * ArticleTagController implements the CRUD actions for ArticleTag model.
  */
-class ArticleTagController extends Controller
+class ArticleTagController extends MyController
 {
 	public function behaviors()
 	{

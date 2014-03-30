@@ -3,13 +3,13 @@ namespace backend\controllers;
 
 use Yii;
 use yii\web\AccessControl;
-use yii\web\Controller;
+use common\components\MyController;
 use common\models\LoginForm;
 
 /**
  * Site controller
  */
-class SiteController extends Controller
+class SiteController extends MyController
 {
 	/**
 	 * @inheritdoc
