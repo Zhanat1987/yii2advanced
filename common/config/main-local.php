@@ -22,7 +22,7 @@ return [
             'class' => 'common\components\MyUrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-//            'suffix' => '.html',
+            'suffix' => '.html',
             'rules' => [
 //                '<action:(login|logout|about)>' => 'site/<action>',
 //                // ...
@@ -31,6 +31,7 @@ return [
 //                '<controller:(post|comment)>/<id:\d+>/<action:(create|updatelete)>' => '<controller>/<action>',
 //                '<controller:(post|comment)>/<id:\d+>' => '<controller>/read',
 //                '<controller:(post|comment)>s' => '<controller>/list',
+                '<language:(ru|en)>/url/index3/<param1>/<param2>' => 'url/index3',
                 '<language:(ru|en)>/' => 'site/index',
                 '<language:(ru|en)>/<action:(contact|login|logout)>' =>
                     'site/<action>',

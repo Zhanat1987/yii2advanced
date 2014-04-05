@@ -25,5 +25,6 @@ $this->title = $name;
 	<p>
 		Please contact us if you think this is a server error. Thank you.
 	</p>
-
+    <h3>$exception:</h3>
+    <?php \common\myhelpers\Debugger::debug($exception); ?>
 </div>

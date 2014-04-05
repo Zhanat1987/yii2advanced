@@ -36,9 +36,13 @@ return [
 //                'pathMap' => ['@app/views' => '@app/themes/basic'],
                 // использование нескольких путей
                 'pathMap' => [
-                    '@app/views' => ['@app/themes/christmas', '@app/themes/basic']
+                    '@app/views' => [
+                        '@app/themes/christmas',
+                        '@app/themes/basic'
+                    ]
                 ],
-                // определяет базовый URL для ресурсов, на которые ссылаются из этих файлов
+                // определяет базовый URL для ресурсов,
+                // на которые ссылаются из этих файлов
                 'baseUrl' => '@app/themes/basic',
             ],
         ],

@@ -33,10 +33,10 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => \Yii::t('guide', 'Others'), 'items' => [
-            '<li class="divider"></li>',
-            '<li class="dropdown-header">' . \Yii::t('guide', 'Advanced Topics') . '</li>',
-            ['label' => \Yii::t('guide', 'Testing'), 'url' => ['/' . \Yii::$app->language . '/guide/testing']],
-            '<li class="divider"></li>',
+//            '<li class="divider"></li>',
+//            '<li class="dropdown-header">' . \Yii::t('guide', 'Advanced Topics') . '</li>',
+//            ['label' => \Yii::t('guide', 'Testing'), 'url' => ['/' . \Yii::$app->language . '/guide/testing']],
+//            '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Theming') . '</li>',
             ['label' => \Yii::t('guide', 'Theming'), 'url' => ['/' . \Yii::$app->language . '/theming']],
             ['label' => 'есть в "themes/views", но нет в "views"', 'url' => ['/' . \Yii::$app->language . '/theming/index2']],
@@ -49,7 +49,7 @@ AppAsset::register($this);
                 но есть в представлениях',
                 'url' => ['/' . \Yii::$app->language . '/theming/index4']
             ],
-            '<li class="divider"></li>',
+//            '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
             [
                 'label' => 'Основы',
@@ -63,50 +63,67 @@ AppAsset::register($this);
                 'label' => 'Использование .less файлов напрямую в Bootstrap',
                 'url' => ['/' . \Yii::$app->language . '/bootstrap-widgets/less']
             ],
-            '<li class="divider"></li>',
+//            '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Console applications') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Console applications'),
                 'url' => ['/' . \Yii::$app->language . '/console']
             ],
-            '<li class="divider"></li>',
+//            '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Working with forms') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Working with forms'),
                 'url' => ['/' . \Yii::$app->language . '/working-with-forms']
             ],
-            '<li class="divider"></li>',
+//            '<li class="divider"></li>',
             '<li class="dropdown-header">' . \Yii::t('guide', 'Caching') . '</li>',
             ['label' => \Yii::t('guide', 'Caching'), 'url' => ['/' . \Yii::$app->language . '/caching']],
-            '<li class="divider"></li>',
-            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
+//            '<li class="divider"></li>',
+//            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
+//            [
+//                'label' => \Yii::t('guide', 'Internationalization'),
+//                'url' => ['/' . \Yii::$app->language . '/guide/internationalization']
+//            ],
+//            '<li class="divider"></li>',
+            '<li class="dropdown-header">' .
+                \Yii::t('guide', 'URL Management') .
+            '</li>',
             [
-                'label' => \Yii::t('guide', 'Internationalization'),
-                'url' => ['/' . \Yii::$app->language . '/guide/internationalization']
+                'label' => \Yii::t('guide', 'URL Management'),
+                'url' => ['/' . \Yii::$app->language . '/url']
             ],
-            '<li class="divider"></li>',
-            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
-            ['label' => \Yii::t('guide', 'URL Management'), 'url' => ['/' . \Yii::$app->language . '/guide/url']],
-            '<li class="divider"></li>',
-            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
             [
-                'label' => \Yii::t('guide', 'Performance Tuning'),
-                'url' => ['/' . \Yii::$app->language . '/guide/performance']
+                'label' => \Yii::t('guide', 'beforeAction'),
+                'url' => ['/' . \Yii::$app->language . '/url/before']
             ],
-            '<li class="divider"></li>',
-            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
             [
-                'label' => \Yii::t('guide', 'Managing assets'),
-                'url' => ['/' . \Yii::$app->language . '/guide/assets']
+                'label' => \Yii::t('guide', 'afterAction'),
+                'url' => ['/' . \Yii::$app->language . '/url/after']
             ],
-            '<li class="divider"></li>',
-            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
-            '<li class="divider"></li>',
-            '<li class="dropdown-header">' . \Yii::t('guide', 'References') . '</li>',
             [
-                'label' => \Yii::t('guide', 'Model validation reference'),
-                'url' => ['/' . \Yii::$app->language . '/guide/validation']
+                'label' => \Yii::t('guide', 'URL Helper'),
+                'url' => ['/' . \Yii::$app->language . '/url/url-helper']
             ],
+//            '<li class="divider"></li>',
+//            '<li class="dropdown-header">' . \Yii::t('guide', 'Performance Tuning') . '</li>',
+//            [
+//                'label' => \Yii::t('guide', 'Performance Tuning'),
+//                'url' => ['/' . \Yii::$app->language . '/performance']
+//            ],
+//            '<li class="divider"></li>',
+//            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
+//            [
+//                'label' => \Yii::t('guide', 'Managing assets'),
+//                'url' => ['/' . \Yii::$app->language . '/guide/assets']
+//            ],
+//            '<li class="divider"></li>',
+//            '<li class="dropdown-header">' . \Yii::t('guide', 'Bootstrap widgets') . '</li>',
+//            '<li class="divider"></li>',
+//            '<li class="dropdown-header">' . \Yii::t('guide', 'References') . '</li>',
+//            [
+//                'label' => \Yii::t('guide', 'Model validation reference'),
+//                'url' => ['/' . \Yii::$app->language . '/guide/validation']
+//            ],
         ]
         ],
         ['label' => \Yii::t('guide', 'Guide'), 'items' => [
@@ -149,8 +166,14 @@ AppAsset::register($this);
             ['label' => \Yii::t('guide', 'Model'), 'url' => ['/' . \Yii::$app->language . '/guide/model']],
             ['label' => \Yii::t('guide', 'View'), 'url' => ['/' . \Yii::$app->language . '/guide/view']],
             ['label' => \Yii::t('guide', 'Controller'), 'url' => ['/' . \Yii::$app->language . '/guide/controller']],
-            ['label' => \Yii::t('guide', 'Events'), 'url' => ['/' . \Yii::$app->language . '/guide/events']],
-            ['label' => \Yii::t('guide', 'Behaviors'), 'url' => ['/' . \Yii::$app->language . '/guide/behaviors']],
+            [
+                'label' => \Yii::t('guide', 'Events'),
+                'url' => ['/' . \Yii::$app->language . '/events']
+            ],
+            [
+                'label' => \Yii::t('guide', 'Behaviors'),
+                'url' => ['/' . \Yii::$app->language . '/behaviors']
+            ],
         ]
         ],
         ['label' => \Yii::t('guide', 'Additional topics'), 'items' => [
@@ -181,7 +204,10 @@ AppAsset::register($this);
                 'label' => \Yii::t('guide', 'Authentication'),
                 'url' => ['/' . \Yii::$app->language . '/guide/authentication']
             ],
-            ['label' => \Yii::t('guide', 'Security'), 'url' => ['/' . \Yii::$app->language . '/guide/security']],
+            [
+                'label' => \Yii::t('guide', 'Security'),
+                'url' => ['/' . \Yii::$app->language . '/security']
+            ],
             ['label' => \Yii::t('guide', 'Authorization'), 'url' => ['/' . \Yii::$app->language . '/guide/authorization']],
             '<li class="divider"></li>',
             '<li class="dropdown-header">' .

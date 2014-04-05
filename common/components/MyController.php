@@ -20,4 +20,18 @@ class MyController extends Controller
         parent::init();
     }
 
+    public function beforeAction($action)
+    {
+        if (parent::beforeAction($action)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function afterAction($action, $result)
+    {
+        return parent::afterAction($action, $result);
+    }
+
 }
