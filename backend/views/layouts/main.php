@@ -195,7 +195,10 @@ AppAsset::register($this);
                 'label' => \Yii::t('guide', 'Error Handling'),
                 'url' => ['/' . \Yii::$app->language . '/guide/error-handling']
             ],
-            ['label' => \Yii::t('guide', 'Logging'), 'url' => ['/' . \Yii::$app->language . '/guide/logging']],
+            [
+                'label' => \Yii::t('guide', 'Logging'),
+                'url' => ['/' . \Yii::$app->language . '/logging']
+            ],
             '<li class="divider"></li>',
             '<li class="dropdown-header">'
             . \Yii::t('guide', 'Security and access control') .

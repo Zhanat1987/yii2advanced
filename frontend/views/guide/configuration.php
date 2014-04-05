@@ -124,7 +124,7 @@ return [
     Например, если вы хотите изменить класс, используемый для всех виджетов LinkPager без указания класса для каждого использования виджета, то вы можете сделать следующее:<br />
     <?php
     highlight_string("<?php
-\\Yii::\\$objectConfig = [
+\\Yii::\$objectConfig = [
     'yii\\widgets\\LinkPager' => [
         'options' => [
             'class' => 'pagination',
