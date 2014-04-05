@@ -10,6 +10,18 @@ return [
             'password' => '',
             'charset' => 'utf8',
         ],
+        'secondDb' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=yii2translate2',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'on afterOpen' => function($event) {
+                    $event->sender->createCommand("SET time_zone = 'UTC'")->execute();
+                    $sql = 'INSERT INTO `test` VALUES (NULL, "test", "test")';
+                    $event->sender->createCommand($sql)->execute();
+                }
+        ],
         'mail' => [
             'class' => 'yii\swiftmailer\Mailer',
             'viewPath' => '@common/mail',

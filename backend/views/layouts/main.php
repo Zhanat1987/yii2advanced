@@ -243,7 +243,7 @@ AppAsset::register($this);
             '<li class="dropdown-header">' . \Yii::t('guide', 'Database') . '</li>',
             [
                 'label' => \Yii::t('guide', 'Database basics'),
-                'url' => ['/' . \Yii::$app->language . '/guide/database-basics']
+                'url' => ['/' . \Yii::$app->language . '/database-basics']
             ],
             [
                 'label' => \Yii::t('guide', 'Query Builder and Query'),
