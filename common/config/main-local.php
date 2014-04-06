@@ -76,6 +76,8 @@ return [
                     '<controller>/<action>',
                 '<language:(ru|en)>/<controller>/<action>' =>
                     '<controller>/<action>',
+                '<language:(ru|en)>/<module>/<controller>/<action>' =>
+                    '<module>/<controller>/<action>',
             ],
         ],
         'i18n' => [

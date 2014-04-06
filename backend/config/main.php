@@ -11,7 +11,11 @@ return [
 	'basePath' => dirname(__DIR__),
 	'preload' => ['log'],
 	'controllerNamespace' => 'backend\controllers',
-	'modules' => [],
+	'modules' => [
+        'auth' => [
+            'class' => 'backend\modules\auth\Auth',
+        ],
+    ],
 	'components' => [
 		'user' => [
 			'identityClass' => 'common\models\User',
