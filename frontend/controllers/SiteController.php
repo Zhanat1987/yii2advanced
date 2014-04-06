@@ -59,6 +59,9 @@ class SiteController extends MyController
 
     public function actionIndex()
     {
+//        Yii::$app->getUser()->set
+//        \common\myhelpers\Debugger::margin();
+//        \common\myhelpers\Debugger::debug(Yii::$app->getUser());
         return $this->render('index');
     }
 

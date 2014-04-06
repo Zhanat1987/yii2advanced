@@ -20,6 +20,7 @@ use yii\web\IdentityInterface;
  * @property integer $created_at
  * @property integer $updated_at
  * @property string $password write-only password
+ * @property string $rbac
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -27,6 +28,14 @@ class User extends ActiveRecord implements IdentityInterface
     const STATUS_ACTIVE = 10;
 
     const ROLE_USER = 10;
+
+    public static $rbacs = [
+        'user',
+        'moderator',
+        'admin',
+        'godmode',
+    ];
+
     /**
      * @inheritdoc
      */
@@ -48,6 +57,8 @@ class User extends ActiveRecord implements IdentityInterface
         $user->setAttributes($attributes);
         $user->setPassword($attributes['password']);
         $user->generateAuthKey();
+        $rbacKey = array_rand(self::$rbacs);
+        $user->rbac = self::$rbacs[$rbacKey];
         if ($user->save()) {
             return $user;
         } else {
@@ -210,6 +221,8 @@ class User extends ActiveRecord implements IdentityInterface
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'unique'],
+
+            ['rbac', 'in', 'range' => self::$rbacs],
         ];
     }
 }

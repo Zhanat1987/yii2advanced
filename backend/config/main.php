@@ -71,6 +71,13 @@ return [
                 'baseUrl' => '@app/themes/basic',
             ],
         ],
-	],
+        'authManager' => [
+            'class' => 'backend\components\PhpManager',
+            'defaultRoles' => ['guest'],
+            'authFile' => '@app/rbac/data.php',
+//            'authFile' => 'backend\data\rbac.php',
+//            'authFile' => 'backend/data/rbac.php',
+        ],
+    ],
 	'params' => $params,
 ];

@@ -211,19 +211,89 @@ AppAsset::register($this);
                 'label' => \Yii::t('guide', 'Security'),
                 'url' => ['/' . \Yii::$app->language . '/security']
             ],
-            ['label' => \Yii::t('guide', 'Authorization'), 'url' => ['/' . \Yii::$app->language . '/guide/authorization']],
             '<li class="divider"></li>',
-            '<li class="dropdown-header">' .
-            \Yii::t('guide', 'Extensions and 3rd party libraries') . '</li>',
-            ['label' => \Yii::t('guide', 'Composer'), 'url' => ['/' . \Yii::$app->language . '/guide/composer']],
+            '<li class="dropdown-header">'
+            . \Yii::t('guide', 'Authorization') .
+            '</li>',
             [
-                'label' => \Yii::t('guide', 'Using 3rd-Party Libraries'),
-                'url' => ['/' . \Yii::$app->language . '/guide/using-3rd-party-libraries']
+                'label' => 'index - доступен всем',
+                'url' => ['/' . \Yii::$app->language . '/authorization']
             ],
-            ['label' => \Yii::t('guide', 'Extending Yii'), 'url' => ['/' . \Yii::$app->language . '/guide/extending-yii']],
             [
-                'label' => \Yii::t('guide', 'Using template engines'),
-                'url' => ['/' . \Yii::$app->language . '/guide/using-template-engines']
+                'label' => 'index2 - доступен всем',
+                'url' => ['/' . \Yii::$app->language . '/authorization/index2']
+            ],
+            [
+                'label' => 'index3 - доступен только авторизованным',
+                'url' => ['/' . \Yii::$app->language . '/authorization/index3']
+            ],
+            [
+                'label' => 'index4 - доступен только авторизованным',
+                'url' => ['/' . \Yii::$app->language . '/authorization/index4']
+            ],
+            [
+                'label' => 'index5 - закрыт для всех',
+                'url' => ['/' . \Yii::$app->language . '/authorization/index5']
+            ],
+            [
+                'label' => 'index6 - доступен только не авторизованным',
+                'url' => ['/' . \Yii::$app->language . '/authorization/index6']
+            ],
+            [
+                'label' => "доступен в зависимости от callback'а",
+                'url' => ['/' . \Yii::$app->language . '/authorization/special-callback']
+            ],
+//            '<li class="divider"></li>',
+//            '<li class="dropdown-header">' .
+//            \Yii::t('guide', 'Extensions and 3rd party libraries') . '</li>',
+//            ['label' => \Yii::t('guide', 'Composer'), 'url' => ['/' . \Yii::$app->language . '/guide/composer']],
+//            [
+//                'label' => \Yii::t('guide', 'Using 3rd-Party Libraries'),
+//                'url' => ['/' . \Yii::$app->language . '/guide/using-3rd-party-libraries']
+//            ],
+//            ['label' => \Yii::t('guide', 'Extending Yii'), 'url' => ['/' . \Yii::$app->language . '/guide/extending-yii']],
+//            [
+//                'label' => \Yii::t('guide', 'Using template engines'),
+//                'url' => ['/' . \Yii::$app->language . '/guide/using-template-engines']
+//            ],
+        ]
+        ],
+        ['label' => \Yii::t('guide', 'RBAC'), 'items' => [
+            '<li class="divider"></li>',
+            '<li class="dropdown-header">'
+            . \Yii::t('guide', 'RBAC') .
+            '</li>',
+            [
+                'label' => 'index - доступен всем',
+                'url' => ['/' . \Yii::$app->language . '/rbac']
+            ],
+            [
+                'label' => 'index2 - доступен всем',
+                'url' => ['/' . \Yii::$app->language . '/rbac/index2']
+            ],
+            [
+                'label' => 'index3 - доступен только авторизованным',
+                'url' => ['/' . \Yii::$app->language . '/rbac/index3']
+            ],
+            [
+                'label' => 'index4 - доступен только авторизованным',
+                'url' => ['/' . \Yii::$app->language . '/rbac/index4']
+            ],
+            [
+                'label' => 'index5 - закрыт для всех',
+                'url' => ['/' . \Yii::$app->language . '/rbac/index5']
+            ],
+            [
+                'label' => 'index6 - доступен только не авторизованным',
+                'url' => ['/' . \Yii::$app->language . '/rbac/index6']
+            ],
+            [
+                'label' => "доступен в зависимости от callback'а",
+                'url' => ['/' . \Yii::$app->language . '/rbac/special-callback']
+            ],
+            [
+                'label' => "rbac-auth-user",
+                'url' => ['/' . \Yii::$app->language . '/rbac-auth-user/index']
             ],
         ]
         ],
