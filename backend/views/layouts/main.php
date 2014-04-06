@@ -247,13 +247,16 @@ AppAsset::register($this);
             ],
             [
                 'label' => \Yii::t('guide', 'Query Builder and Query'),
-                'url' => ['/' . \Yii::$app->language . '/guide/query-builder']
+                'url' => ['/' . \Yii::$app->language . '/query-builder']
             ],
-            ['label' => \Yii::t('guide', 'Active Record'), 'url' => ['/' . \Yii::$app->language . '/guide/active-record']],
             [
-                'label' => \Yii::t('guide', 'Database Migration'),
-                'url' => ['/' . \Yii::$app->language . '/guide/database-migration']
+                'label' => \Yii::t('guide', 'Active Record'),
+                'url' => ['/' . \Yii::$app->language . '/active-record']
             ],
+//            [
+//                'label' => \Yii::t('guide', 'Database Migration'),
+//                'url' => ['/' . \Yii::$app->language . '/guide/database-migration']
+//            ],
         ]
         ],
 //        ['label' => \Yii::t('guide', 'Contact'), 'url' => ['/' . \Yii::$app->language . '/site/contact']],
